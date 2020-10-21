@@ -17,25 +17,26 @@ int main() {
     cout<<"2. - "<<endl;
     cout<<"3. * "<<endl;
     cout<<"4. / "<<endl;
+    cin>>bil;
 
     if(bil == 1) {
         int penjumlahan = number1 + number2;
-        cout<<penjumlahan;
+        cout<<"hasilnya adalah: "<<penjumlahan;
     }
     if(bil == 2) {
         int pengurangan = number1 - number2;
-        cout<<pengurangan;
+        cout<<"hasilnya adalah: "<<pengurangan;
     }
     if(bil == 3) {
         int perkalian = number1 * number2;
-        cout<<perkalian;
+        cout<<"hasilnya adalah: "<<perkalian;
     }
     if(bil == 4) {
         int pembagian = number1 / number2;
-        cout<<pembagian;
+        cout<<"hasilnya adalah: "<<pembagian;
     }
     else {
-        "tidak ada pilihannya";
+        cout<<"tidak ada pilihannya";
     }
     return 0;
 
