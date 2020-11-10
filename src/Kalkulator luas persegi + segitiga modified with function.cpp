@@ -6,7 +6,7 @@ void luasSegitiga(){
 	float Lsegitiga, a ,t ;
 	
 //proses perhitungan
-    cout<<"masukkan alas = " ;
+        cout<<"masukkan alas = " ;
 	cin>>a ;
 	cout<<"masukkan tinggi = " ;
 	cin>>t ;
