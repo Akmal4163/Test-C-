@@ -4,7 +4,6 @@ using namespace std;
 void luasSegitiga() {
 //menghitung luas segitiga
 	float Lsegitiga, a ,t ;
-	
 //proses perhitungan
         cout<<"masukkan alas = " ;
 	cin>>a ;
@@ -12,11 +11,8 @@ void luasSegitiga() {
 	cin>>t ;
 //rumus luas segitiga
 	Lsegitiga = 0.5 * a * t ;
-	
-	cout<<"maka luas segitiga = "<<Lsegitiga<<"cm"<<endl;
-	 
+	cout<<"maka luas segitiga = "<<Lsegitiga<<"cm"<<endl;	 
 }
-
 void luasLingkaran() {
 //menghitung luas lingkaran
     float Llingkaran, r;
@@ -26,19 +22,15 @@ void luasLingkaran() {
     cin>>r;
     cout<<"phi\t\t\t\t= "<<phi<<endl;
     cout<<"<<===========================>>"<<endl;
- 
  // rumus luas lingkaran
      Llingkaran = phi * r * r;
- 
- 
-// hasil perhitungan
+ // hasil perhitungan
      cout<<"maka luas lingkaran adalah = "<<Llingkaran<<"cm"<<endl;
 }
-
 int main() {
     int choices;
     cout<<"masukkan pilihan, 1. luas segitiga 2. luas lingkaran = " <<endl;
-	cin>>choices ;
+    cin>>choices;
     if(choices == 1){
         luasSegitiga();
     } else if(choices == 2){
