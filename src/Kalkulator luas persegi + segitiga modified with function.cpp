@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void luasSegitiga(){
+void luasSegitiga() {
 //menghitung luas segitiga
 	float Lsegitiga, a ,t ;
 	
@@ -17,25 +17,25 @@ void luasSegitiga(){
 	 
 }
 
-void luasLingkaran(){
+void luasLingkaran() {
 //menghitung luas lingkaran
     float Llingkaran, r;
     const float phi = 3.14 ;
 //proses awal 
- cout<<"masukkan jari-jari lingkaran \t= ";
- cin>>r;
- cout<<"phi\t\t\t\t= "<<phi<<endl;
- cout<<"<<===========================>>"<<endl;
+    cout<<"masukkan jari-jari lingkaran \t= ";
+    cin>>r;
+    cout<<"phi\t\t\t\t= "<<phi<<endl;
+    cout<<"<<===========================>>"<<endl;
  
  // rumus luas lingkaran
- Llingkaran = phi * r * r;
+     Llingkaran = phi * r * r;
  
  
 // hasil perhitungan
- cout<<"maka luas lingkaran adalah = "<<Llingkaran<<"cm"<<endl;
+     cout<<"maka luas lingkaran adalah = "<<Llingkaran<<"cm"<<endl;
 }
 
-int main(){
+int main() {
     int choices;
     cout<<"masukkan pilihan, 1. luas segitiga 2. luas lingkaran = " <<endl;
 	cin>>choices ;
