@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 /*
- * Berikut ini adalah langkah-langkah dalam pengerjaan soal nomor 2
+ * Berikut ini adalah langkah-langkah dalam pengerjaan soal nomor 3
  * 1. Buat Pesanan
  * 2. Tentukan Diskon
  */
