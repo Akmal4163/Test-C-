@@ -1,51 +1,40 @@
-#include <iostream>
-using namespace std;
+#include<iostream>
 
-
-//membuat fungsi untuk menghitung luas segitiga
-void luasSegitiga(){
-	//memasukkan alas dari user
-	float alas;
-	cout<<"masukkan alas: "<<endl;
-	cin>>alas;
-	//memasukkan tinggi dari user
-	float tinggi;
-	cout<<"masukkan tinggi: "<<endl;
-	cin>>tinggi;
-	//menghitung luas segitiga
-	float hasil = alas * tinggi / 2;
-	//menampilkan hasil hitungan
-	cout<<"hasilnya :"<<hasil;		
-}
-//membuat fungsi untuk menghitung luas persegi
-void luasPersegi(){
-	//memasukkan sisi pertama dari user
-	float sisi;
-	cout<<"masukkan sisi pertama: "<<endl;
-	cin>>sisi;
-	//menghitung luas persegi
-	float hasil2= sisi * sisi;
-	//menampilkan hasil
-	cout<<"hasilnya :"<<hasil2;
+void luasSegitiga()
+{
+    double alas, tinggi;
+    std::cout << "masukkan alas\n";
+    std::cin >> alas;
+    std::cout << "masukkan tinggi\n";
+    std::cin >> tinggi;
+    double luas = alas * tinggi / 2;
+    std::cout << "luas segitiga:" << luas << std::endl;
 }
 
-int main(){
-	//mengambil inputan dari user dan menyuruh user untuk memilih
-	int choices;
-	cout<<"pilih rumus yang akan dihitung"<<endl;
-	cout<<"1. luas segitiga"<<endl;
-	cout<<"2. luas persegi"<<endl;
-	cin>>choices;
-	//menyuruh user untuk memilih
-	if(choices == 1){
-		//memanggil fungsi luas segitiga
-		luasSegitiga();
-	} else if(choices == 2){
-		//memanggil fungsi luas persegi
-		luasPersegi();
-	} else {
-		cout<<"tidak ada di pilihannya !!!"<<endl;
-	}
-	
-	return 0;
+void luasPersegi()
+{
+    double sisi;
+    std::cout << "masukkan sisi\n";
+    std::cin >> sisi;
+    double luaspersegi = sisi * sisi;
+    std::cout << "luas persegi:" << luaspersegi << std::endl;
+}
+
+int main()
+{
+    int pilih;
+    std::cout << "pilih rumus: 1. luas segitiga 2. luas persegi" << std::endl;
+    std::cin >> pilih;
+    if (pilih == 1) {
+        luasPersegi();
+    } 
+    else if (pilih == 2) {
+        luasSegitiga();
+    }
+    else {
+        std::cout << "invalid operator" << std::endl;
+    }
+
+    return 0;
+    
 }
