@@ -1,4 +1,5 @@
-#include<iostream>
+#include <iostream>
+
 
 void luasSegitiga()
 {
@@ -20,16 +21,29 @@ void luasPersegi()
     std::cout << "luas persegi:" << luaspersegi << std::endl;
 }
 
+void luasLingkaran()
+{
+    double r;
+    const float phi = 3.14;
+    std::cout << "masukkan jari-jari\n";
+    std::cin >> r;
+    double luaslingkaran = phi * r * r;
+    std::cout << "luas lingkaran:" << luaslingkaran << std::endl;
+}
+
 int main()
 {
     int pilih;
-    std::cout << "pilih rumus: 1. luas segitiga 2. luas persegi" << std::endl;
+    std::cout << "pilih rumus: 1. luas segitiga 2. luas persegi 3. luas lingkaran" << std::endl;
     std::cin >> pilih;
     if (pilih == 1) {
         luasPersegi();
     } 
     else if (pilih == 2) {
         luasSegitiga();
+    }
+    else if (pilih == 3) {
+        luasLingkaran();
     }
     else {
         std::cout << "invalid operator" << std::endl;
