@@ -6,28 +6,48 @@ int main()
     while(true)
     {
         std::string key;
-        std::cout << "continue? [y/n] \n";
+        std::cout << "continue? [Y/N]\n";
         std::cin >> key;
-        if(key == "n")
+        if(key == "n") break;
+        else 
         {
-            break;
+           int target;
+           std::cout<<"enter target number: \n";
+           std::cin>>target;
+           for(int i = 1; i <= target; i++)
+           {
+               for(int topleft = target; topleft >= i; topleft--)
+               {
+                  std::cout << "*";
+               }
+               for(int top = 1; top <= (2 * i - 1); top++)
+               {
+                   std::cout << "#";
+                   
+               }
+               for(int topright = target; topright >= i; topright--)
+               {
+                   std::cout << "*";
+               }
+               std::cout << std::endl;
+           }
+           for(int i = 2; i <= target; i++)
+           {
+               for(int bottomleft = 1; bottomleft <= i; bottomleft++)
+               {
+                   std::cout << "*";
+               }
+               for(int bottom = target; bottom >= (2 * i - target); bottom--)
+               {
+                   std::cout << "#";
+               }
+               for(int bottomright = 1; bottomright <= i; bottomright++)
+               {
+                   std::cout << "*";
+               }
+               std::cout << std::endl;
+           }
         }
-        if(key == "y")
-        {
-            int number;
-            std::cout << "enter number: \n";
-            std::cin >> number;
-            if(number % 2 == 0)
-            {
-                std::cout<<"number is: " << number<< " and genap" <<std::endl;
-            }
-            else
-            {
-                std::cout<<"number is: " << number<< " and ganjil" <<std::endl;
-            }
-            
-        }
-       
     }
     std::cout << "process finished";
     std::cin.get();
