@@ -8,7 +8,7 @@ int main()
         std::string key;
         std::cout << "continue? [Y/N]\n";
         std::cin >> key;
-        if(key == "n") break;
+        if(key == "n" || key == "N") break;
         else 
         {
            int target;
